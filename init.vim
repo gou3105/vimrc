@@ -84,6 +84,15 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " ビープ音消し、フラッシュ警告消し
 set visualbell t_vb=
 "---------------------------------------------------------------------------
+"
+
+
+" -------------------- BufRead 関連
+"vue
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+
+"go
+au BufRead,BufNewFile *.go set filetype=go
 
 "---------------------------------------------------------------------------
 " ファイル操作に関する設定:
